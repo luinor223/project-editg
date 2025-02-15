@@ -1,2 +1,2 @@
-# project-editg
-Steam Reviews Data Pipeline &amp; Game Recommendation System
+# Project EDITG
+EDITG: Even Dead, I'm The Gamer
