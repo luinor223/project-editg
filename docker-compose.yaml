@@ -1,0 +1,20 @@
+name: project-editg
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: steam
+      MARIADB_USER: user
+      MARIADB_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./storage/mariadb_data:/var/lib/mariadb:Z
+      - ./dataset:/tmp/dataset
+      - ./load_dataset:/tmp/load_dataset
+    
+volumes:
+  mariadb_data:
